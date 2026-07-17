@@ -12,7 +12,7 @@ describe('Funcionalidade: Cadastro no Hub de Leitura', () => {
   });
 
   // Cenário de automação do caminho positivo
-  it.only('Cenário Positivo 01 Feat:Login', () => {
+  it('Cenário Positivo 01 Feat:Cadastro', () => {
     //Função determinando emails aleatórios para cadastro
     let email = `teste${Date.now()}@teste.com`
     // Preenche o nome
@@ -34,7 +34,7 @@ describe('Funcionalidade: Cadastro no Hub de Leitura', () => {
 
   });  
 
-it('Cenário Negativo 01 Feat:Login', () => {
+it('Cenário Negativo 01 Feat:Cadastro', () => {
     cy.get('#name').type("Luis Gustavo de Araújo")
     // Preenche o mesmo email
     cy.get('#email').type("teste02@gmail.com")
